@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,6 +12,18 @@ public partial class EnterEvents : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+       
+    }
 
+    
+    protected void btnSubmit(object sender,EventArgs e)
+    {
+        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+        con.Open();
+        SqlCommand command = new SqlCommand("INSERT INTO tblEvents(EventDate,EventDetails,EventDepartment) Values('" + txtDate.Text + "','" + txtDetails.Text + "','"+txtDepartment.Text+"')", con);
+        command.ExecuteNonQuery();
+        txtDate.Text = "";
+        txtDetails.Text = "";
+        txtDepartment.Text = "";
     }
 }
