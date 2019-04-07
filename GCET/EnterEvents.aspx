@@ -41,9 +41,9 @@
             <h1 style="color:#656565;text-align:center;text-decoration:underline;color:crimson">Events Entry</h1><br /><br />
         <div style="text-align:center">
        <div class="form-group">
-    <label style="font-weight:600;font-size:large;color:blue">Enter News Image URL </label>
-    <asp:TextBox runat="server" CssClass="form-control" id="txtImage" style="text-align:center" placeholder="Enter URL of the image to be displayed"></asp:TextBox>
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" CssClass="text-danger" ControlToValidate="txtImage" ErrorMessage="*This field is required !"></asp:RequiredFieldValidator>
+    <label style="font-weight:600;font-size:large;color:blue">Enter Event Date</label>
+    <asp:TextBox runat="server" CssClass="form-control" id="txtDate" style="text-align:center" placeholder="Enter date(in dd/mm/yy format)"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RV1" runat="server" CssClass="text-danger" ControlToValidate="txtDate" ErrorMessage="*This field is required !"></asp:RequiredFieldValidator>
   </div>
   <div class="form-group">
     <label style="font-weight:600;font-size:large;color:blue">Enter Event Details</label>

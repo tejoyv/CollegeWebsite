@@ -20,9 +20,9 @@ public partial class EnterEvents : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
         con.Open();
-        SqlCommand command = new SqlCommand("INSERT INTO tblEvents(EventImage,EventDetails,EventDepartment) Values('" + txtImage.Text + "','" + txtDetails.Text + "','"+txtDepartment.Text+"')", con);
+        SqlCommand command = new SqlCommand("INSERT INTO tblEvents(EventDate,EventDetails,EventDepartment) Values('" + txtDate.Text + "','" + txtDetails.Text + "','"+txtDepartment.Text+"')", con);
         command.ExecuteNonQuery();
-        txtImage.Text = "";
+        txtDate.Text = "";
         txtDetails.Text = "";
         txtDepartment.Text = "";
     }

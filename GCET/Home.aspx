@@ -28,11 +28,6 @@
 .design a {
     color: #fff;
 }
-.tg  {border-collapse:collapse;border-spacing:0;border:none;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 
     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -57,11 +52,11 @@
       <a class="nav-item nav-link active" href="Home.aspx"style="color:white;padding-left:20px;padding-right:20px;">HOME<span class="sr-only">(current)</span></a>
         <a class="nav-item nav-link" href="#" style="color:white;padding-left:20px;padding-right:20px">DISCOVER GCET</a>
         <a class="nav-item nav-link" href="#" style="color:white;padding-left:20px;padding-right:20px">ADMISSIONS</a>
-      <a class="nav-item nav-link" href="Department.aspx" style="color:white;padding-left:20px;padding-right:20px">DEPARTMENT</a>
+      <a class="nav-item nav-link" href="#" style="color:white;padding-left:20px;padding-right:20px">DEPARTMENT</a>
       <a class="nav-item nav-link" href="#"style="color:white;padding-left:20px;padding-right:20px">R & D</a>
-      <a class="nav-item nav-link" href="placement.aspx"style="color:white;padding-left:20px;padding-right:20px">PLACEMENT</a>
-      <a class="nav-item nav-link" href="activities.aspx"style="color:white;padding-left:20px;padding-right:20px">ACTIVITIES</a>
-      <a class="nav-item nav-link" href="campus.aspx"style="color:white;padding-left:20px;padding-right:20px">CAMPUS</a>
+      <a class="nav-item nav-link" href="#"style="color:white;padding-left:20px;padding-right:20px">PLACEMENT</a>
+      <a class="nav-item nav-link" href="#"style="color:white;padding-left:20px;padding-right:20px">ACTIVITIES</a>
+      
       <a class="nav-item nav-link" href="Contact Us.aspx"style="color:white;padding-left:20px;padding-right:20px">CONTACT US</a>
       </div>
   </div>
@@ -100,7 +95,7 @@
         <marquee behavior="scroll" direction="left"  style="color:red;">Accredited Programs: Information Technology, Mechanical Engineering, Mechatronics and Electronics & Communication Engineering by National Board of Accreditation (NBA), New Delhi for two years w.e.f. July 1st 2015. | We got new approval for the postgraduate courses; ME in Computer Engineering and ME in Packaging Technology.</marquee>
    <br /><br /> <p style="text-align:center;color:red">Watch 23rd Annual Day Celebration Live at 4:30 PM Onwards</p>
         <br /><br /><br />
-       <div style="float:right;width:21%;height:0%;margin-right:55px;margin-top:-33px;">
+       <div style="float:right;width:21%;height:0%;margin-right:55px;margin-top:-20px;">
     <div class="alert alert-primary" role="alert">
   Important Notices
 </div>
@@ -188,28 +183,7 @@
             </SelectedItemTemplate>
         </asp:ListView>
                 </td>
-            
-            <!--Events Display-->
-            <h4 style="color:#656565;margin-left:700px;margin-top:-69px;font-size:30px;text-decoration:underline">Events</h4><br />
-            <td style="margin-left:30px;color:#656565">
-                <asp:DataList style="margin-left:120px;" ID="dt2" runat="server">
-                    <ItemTemplate>
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" rowspan="3"><img src="<%#Eval("EventImage")%>"" style="width:90px;height:90px;"></th>
-    <th class="tg-c3ow" rowspan="2"><%#Eval("EventDetails")%></th>
-  </tr>
-  <tr>
-  </tr>
-  <tr>
-    <td class="tg-0pky"><%#Eval("EventDepartment")%></td>
-  </tr>
-</table>
-                        </ItemTemplate>
-                    </asp:DataList>
- </td>
-
- </table>
+            </table>
         <p>
         <br />
         </p>
@@ -218,6 +192,11 @@
         <p>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [NewsDate], [NewsContent] FROM [News]"></asp:SqlDataSource>
         </p>
+
+        
+        
+
+
     </form>
     <br /><br /><br />
         <div class="footer-bottom">
