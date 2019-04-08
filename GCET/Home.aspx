@@ -55,10 +55,10 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="Home.aspx"style="color:white;padding-left:20px;padding-right:20px;">HOME<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#" style="color:white;padding-left:20px;padding-right:20px">DISCOVER GCET</a>
-        <a class="nav-item nav-link" href="#" style="color:white;padding-left:20px;padding-right:20px">ADMISSIONS</a>
+        <a class="nav-item nav-link" href="Discover.aspx" style="color:white;padding-left:20px;padding-right:20px">DISCOVER GCET</a>
+        <a class="nav-item nav-link" href="Admission.aspx" style="color:white;padding-left:20px;padding-right:20px">ADMISSIONS</a>
       <a class="nav-item nav-link" href="Department.aspx" style="color:white;padding-left:20px;padding-right:20px">DEPARTMENT</a>
-      <a class="nav-item nav-link" href="#"style="color:white;padding-left:20px;padding-right:20px">R & D</a>
+      <a class="nav-item nav-link" href="RD.aspx"style="color:white;padding-left:20px;padding-right:20px">R & D</a>
       <a class="nav-item nav-link" href="placement.aspx"style="color:white;padding-left:20px;padding-right:20px">PLACEMENT</a>
       <a class="nav-item nav-link" href="activities.aspx"style="color:white;padding-left:20px;padding-right:20px">ACTIVITIES</a>
       <a class="nav-item nav-link" href="campus.aspx"style="color:white;padding-left:20px;padding-right:20px">CAMPUS</a>
